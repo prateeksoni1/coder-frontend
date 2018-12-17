@@ -1,0 +1,41 @@
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.root {
+    flex-grow: 1;
+    font-family: "Montserrat";
+    background-color: #000066;
+    -webkit-box-shadow: 0px 12px 11px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 12px 11px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 12px 11px -6px rgba(0, 0, 0, 0.75);
+}
+
+.banner {
+    width: 60%;
+    height: 500px;
+    margin: 25px auto;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    flex: 1;
+}
+
+.banner h2 {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.banner button {
+    margin-bottom: 20px;
+}
