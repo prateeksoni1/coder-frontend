@@ -9,6 +9,7 @@ import {
     Typography,
     ButtonBase
 } from "@material-ui/core";
+import {Link} from 'react-router-dom';
 
 export default class HomeCard extends Component {
     state = {
@@ -34,12 +35,8 @@ export default class HomeCard extends Component {
             <div className={classes.root}>
                 {this.state.cards.map(card => (
                     <Card key={card._id}>
+                        <Link to={`/${card.url}`} style={{ textDecoration: 'none'}}>
                         <CardActionArea
-                            onClick={() =>
-                                console.log(
-                                    "click" + card.url
-                                )
-                            }
                             className={classes.card}
                             style={{
                                 backgroundColor: `${
@@ -47,15 +44,7 @@ export default class HomeCard extends Component {
                                 }`
                             }}
                         >
-                            {/* <ButtonBase
-                                onClick={() =>
-                                    console.log("clicked")
-                                }
-                                style={{
-                                    width: "100%",
-                                    height: "100%"
-                                }}
-                            > */}
+                            
                             <div>
                                 <Typography
                                     gutterBottom
@@ -65,8 +54,10 @@ export default class HomeCard extends Component {
                                     {card.title}
                                 </Typography>
                             </div>
-                            {/* </ButtonBase> */}
+                            
                         </CardActionArea>
+                        </Link>
+                        
                     </Card>
                 ))}
             </div>
