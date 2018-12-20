@@ -33,4 +33,4 @@ class Topic extends Component {
   }
 }
 
-export default Cpp;
+export default Topic;

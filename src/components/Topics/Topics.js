@@ -10,7 +10,7 @@ class Topics extends Component {
   componentDidMount() {
     const topic = this.props.topic;
     if (this.state.topics.length == 0) {
-      Axios.get("/topics/cpp").then(res => {
+      Axios.get("/topics?type=" + this.props.topic).then(res => {
         this.setState({
           topics: res.data
         });
