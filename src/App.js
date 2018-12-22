@@ -12,6 +12,7 @@ class App extends Component {
         <Route path="/cpp" exact render={() => <Topic type="cpp" />} />
         <Route path="/java" exact render={() => <Topic type="java" />} />
         <Route path="/ds" exact render={() => <Topic type="ds" />} />
+        <Route path="/algo" exact render={() => <Topic type="algo" />} />
       </div>
     );
   }
