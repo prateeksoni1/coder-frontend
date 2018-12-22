@@ -2,7 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 1em;
 }
 
 .card {
